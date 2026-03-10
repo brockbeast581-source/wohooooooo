@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Baby ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<audio id="bgMusic" src="music/birthday.mp3"></audio>
+
+<!-- PAGE 1 INTRO -->
+<section class="page active" id="page1">
+<h1>🎂 Happy Birthday Baby 🎉</h1>
+
+<p>
+Hey baby wishing you a happy birthday 🎂🎉💕 <br>
+I made something for you... let's watch together ❤️
+</p>
+
+<button onclick="toggleMusic()">🎵 Music</button>
+<button onclick="nextPage()">Start ▶</button>
+</section>
+
+
+<!-- PAGE 2 LOVE LIST -->
+<section class="page" id="page2">
+
+<h2>💖 Things I Love About You 💖</h2>
+
+<ul>
+<li>I love your flaws, because they make you real and uniquely you ❤️</li>
+<li>I love your insecurities, because trusting me with them shows your strength 🤍</li>
+<li>I love how you turn ordinary moments into special memories without even trying</li>
+<li>I love the way you believe in us, even when things are difficult 🤝❤️</li>
+<li>And most importantly…
+I love you — not the perfect version, but the real version of you 💘</li>
+</ul>
+
+<button onclick="prevPage()">⬅ Previous</button>
+<button onclick="nextPage()">Next ➡</button>
+
+</section>
+
+
+<!-- PAGE 3 PHOTO SLIDESHOW -->
+<section class="page" id="page3">
+
+<h2>📸 Our Memories</h2>
+
+<img id="photo" src="photos/pic1.jpg">
+
+<p id="caption">YOUR CAPTION 1</p>
+
+<div class="buttons">
+<button onclick="prevPhoto()">⬅ Previous</button>
+<button onclick="nextPhoto()">Next ➡</button>
+</div>
+
+<button onclick="nextPage()">Continue ❤️</button>
+
+</section>
+
+
+<!-- PAGE 4 TYPEWRITER MESSAGE -->
+<section class="page" id="page4">
+
+<h2>💌 A Message For You</h2>
+
+<p id="typeText"></p>
+
+<button onclick="nextPage()">Next ➡</button>
+
+</section>
+
+
+<!-- PAGE 5 READY PAGE -->
+<section class="page" id="page5">
+
+<h2>❤️ Before Closing</h2>
+
+<p>Are you ready for a small closing surprise? 🎁</p>
+
+<button onclick="nextPage()">Reveal Video 🎬</button>
+
+</section>
+
+
+<!-- PAGE 6 VIDEO -->
+<section class="page" id="page6">
+
+<h2>🎥 Our Special Moment</h2>
+
+<video controls width="500">
+<source src="video/surprise.mp4" type="video/mp4">
+</video>
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
